@@ -1,0 +1,28 @@
+.offer1{
+    align-items:"center";
+     color: "#007bff";
+     margin: 20;
+}
+.offer2{
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;   
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+.offer3{
+             
+             border-radius:10 ;
+              box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+             
+}
+.centerText {
+  text-align: center;
+   font-weight:  "bold";
+   align-Content:"center";
+   color:rgb(74, 28, 243)
+}
+.priceText{
+    color:rgb(247, 10, 30);
+
+}
