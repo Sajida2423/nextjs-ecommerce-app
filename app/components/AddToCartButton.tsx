@@ -14,7 +14,7 @@ const router = useRouter();
       quantity: 1,
     });
   router.push("/cart");
-    //  alert("Product added to cart!");
+     alert("Product added to cart!");
   };
 
   return (

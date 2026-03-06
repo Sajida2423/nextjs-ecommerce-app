@@ -1,8 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-// import Image from 'next/image';
- // make sure this file exists
+import  { useEffect, useState } from 'react';
 import '../styles/offer.module.css'
 
 
@@ -41,7 +39,7 @@ export default function OfferPage() {
           <div
             key={p.id}
             className="card p-3 text-center offer3"
-            style={{ width: '180px' }}
+            style={{ width: '180px',  backgroundColor:"#f8e6f0"}} 
           >
             {p.thumbnail || p.image || p.images?.[0] ? (
               <img

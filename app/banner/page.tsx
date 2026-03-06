@@ -10,7 +10,7 @@ export default function BannerPage() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true); // mark component as mounted so it renders
+    setMounted(true); 
   }, []);
 
   const handleClick = () => router.push('/product');
@@ -21,20 +21,20 @@ export default function BannerPage() {
     '/banner1.png',
   ];
 
-  if (!mounted) return null; // ensures SSR doesn't break
+  if (!mounted) return null; 
 
   return (
     <div className="banner-container">
-      {/* Load Bootstrap JS */}
+   
       <Script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         strategy="afterInteractive"
         onLoad={() => {
-          // Initialize carousel AFTER Bootstrap JS loads
+      
           const carouselEl = document.getElementById('bannerCarousel');
           if (carouselEl && (window as any).bootstrap) {
             new (window as any).bootstrap.Carousel(carouselEl, {
-              interval: 3000, // slide every 3 seconds
+              interval: 3000, 
               ride: 'carousel',
               touch: true,
             });
@@ -61,12 +61,19 @@ export default function BannerPage() {
           {banners.map((img, index) => (
             <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
               <img src={img} className="d-block w-100 banner-image" alt={`Banner ${index + 1}`} />
-              <div className="carousel-caption banner-overlay">
-                <h1>Welcome to Smart Cart</h1>
+              <div className="carousel-caption banner-overlay ">
+                <br></br>
+
+
+                 <div>
+                <h2>Welcome to Smart Cart</h2>
                 <p>Best products at the best prices</p>
                 <button className="btn btn-warning" onClick={handleClick}>
                   Shop Now
-                </button>
+                </button></div>
+
+
+
               </div>
             </div>
           ))}
