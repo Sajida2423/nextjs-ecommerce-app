@@ -11,7 +11,7 @@
 .foot {
   background-color: #3c0023; 
   color: white;
-   margin-top: auto;
-
+   /* margin-top: auto; */
+ margin-top: 10px;
 }
  

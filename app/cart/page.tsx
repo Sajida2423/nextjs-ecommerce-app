@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useRouter } from "next/navigation";
@@ -34,15 +33,13 @@ export default function CartPage() {
           {/* <button className="btn btn-danger btn-sm" onClick={() => removeFromCart(item.id)}>Remove</button> */}
         
         <button
-  className="btn btn-danger btn-sm px-2 py-1"
-  style={{ fontSize: "0.9rem", borderRadius: "5px" }}
-  onClick={() => removeFromCart(item.id)}
->
-  Remove
-</button>
-        
-        
-        
+        className="btn btn-danger btn-sm px-2 py-1"
+        style={{ fontSize: "0.9rem", borderRadius: "5px" }}
+        onClick={() => removeFromCart(item.id)}
+      >
+        Remove
+      </button>
+          
         </div>
              
       ))}

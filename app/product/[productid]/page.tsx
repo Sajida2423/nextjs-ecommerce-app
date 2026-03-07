@@ -1,16 +1,19 @@
+
 import AddToCartButton from "@/app/components/AddToCartButton";
 import { Productservice, product } from "@/app/Service/product-service";
 
 export default async function Detailpage({ params }: any) {
-
-  const resolvedParams = await params;
-  const { productid } = resolvedParams;
+  const Params = await params;
+  const { productid } = Params;
   const id = Number(productid);
 
-  
-  const singleproduct: product | null = await Productservice.getproductbyid(id);
+  const singleproduct=await Productservice.getproductbyid(id);
+  // const singleproduct: product | null = await Productservice.getproductbyid(id);
 
-  if (!singleproduct) return <p>Product not found</p>;
+  // const singleproduct: product | null = await Productservice.getproductbyid(id);
+
+  if (!singleproduct)
+     return <p>Product not found</p>;
 
   return (
     <div className="container mt-3 d-flex flex-column min-vh-100">

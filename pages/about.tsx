@@ -1,7 +1,10 @@
 
 export default function About() {
   return (
-    <div className="aboutus d-flex flex-column min-vh-100 container-fluid  justify-content-center" style={{backgroundColor:"#f0c9e0"}}>
+    <div className="aboutus d-flex flex-column min-vh-100 container-fluid  justify-content-center" style={{backgroundColor:"#f0c9e0"
+
+
+    }}>
 
       {/* <div className="container-fluid d-flex vh-100 align-items-center justify-content-center" style={{backgroundColor:"#f0c9e0"}}> */}
       <h2 style={{ color: "blue" }}>About Us</h2>
